@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import Container from "../common/Container";
 import Logo from "../common/Logo";
-import NavLink from "./NavLink";
+import NavLink from "./Navlink";
 
 const links = [
   "Home",
