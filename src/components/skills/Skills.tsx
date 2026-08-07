@@ -4,7 +4,6 @@ import {
   Database,
   Server,
   Brain,
-  Cloud,
   Wrench,
 } from "lucide-react";
 
