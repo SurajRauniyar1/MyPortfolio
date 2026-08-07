@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
+import { Server } from "lucide-react";
 import {
-  Brain,
-  Cpu,
-  Database,
-  Docker,
-  Server,
-  Sparkles,
-} from "lucide-react";
+  SiFastapi,
+  SiReact,
+  SiDocker,
+  SiPostgresql,
+  SiPython,
+  SiTensorflow,
+} from "react-icons/si";
 
 const status = [
   "Backend Online",
@@ -16,12 +17,12 @@ const status = [
 ];
 
 const tech = [
-  { name: "FastAPI", icon: Server },
-  { name: "React", icon: Sparkles },
-  { name: "Python", icon: Cpu },
-  { name: "Docker", icon: Docker },
-  { name: "TensorFlow", icon: Brain },
-  { name: "PostgreSQL", icon: Database },
+  { name: "FastAPI", icon: SiFastapi },
+  { name: "React", icon: SiReact },
+  { name: "Python", icon: SiPython },
+  { name: "Docker", icon: SiDocker },
+  { name: "TensorFlow", icon: SiTensorflow },
+  { name: "PostgreSQL", icon: SiPostgresql },
 ];
 
 export default function FloatingTech() {
@@ -49,7 +50,6 @@ export default function FloatingTech() {
         </div>
 
         <div className="mt-8 space-y-4">
-
           {status.map((item) => (
             <div
               key={item}
@@ -60,12 +60,11 @@ export default function FloatingTech() {
                 <span>{item}</span>
               </div>
 
-              <span className="text-green-400 text-sm">
+              <span className="text-sm text-green-400">
                 Active
               </span>
             </div>
           ))}
-
         </div>
 
         <div className="mt-10">
@@ -74,7 +73,6 @@ export default function FloatingTech() {
           </p>
 
           <div className="grid grid-cols-2 gap-3">
-
             {tech.map(({ name, icon: Icon }) => (
               <div
                 key={name}
@@ -87,25 +85,31 @@ export default function FloatingTech() {
                 </span>
               </div>
             ))}
-
           </div>
         </div>
 
         <div className="mt-10 rounded-2xl bg-gradient-to-r from-blue-600/20 to-violet-600/20 p-5">
 
-          <p className="text-xs uppercase tracking-[0.3em] text-blue-300">
-            Featured Project
-          </p>
+          <div className="flex items-center gap-3">
+            <Server className="text-blue-400" />
 
-          <h4 className="mt-2 text-xl font-bold">
-            AI Developer Assistant
-          </h4>
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-blue-300">
+                Featured Project
+              </p>
 
-          <p className="mt-2 text-sm text-gray-300">
+              <h4 className="mt-1 text-xl font-bold">
+                AI Developer Assistant
+              </h4>
+            </div>
+          </div>
+
+          <p className="mt-4 text-sm text-gray-300">
             FastAPI • React • PostgreSQL • Docker • LLM
           </p>
 
         </div>
+
       </div>
     </motion.div>
   );

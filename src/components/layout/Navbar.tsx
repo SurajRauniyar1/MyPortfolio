@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 import Container from "../common/Container";
 import Logo from "../common/Logo";
 import NavLink from "./NavLink";
@@ -50,23 +52,22 @@ export default function Navbar() {
             <a
               href="https://github.com/SurajRauniyar1"
               target="_blank"
+              rel="noopener noreferrer"
               className="rounded-xl border border-white/10 bg-white/5 p-3 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-500/10"
             >
-              <Github size={18} />
+              <FaGithub size={18} />
             </a>
 
             <a
               href="#"
               className="rounded-xl border border-white/10 bg-white/5 p-3 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-500/10"
             >
-              <Linkedin size={18} />
+              <FaLinkedin size={18} />
             </a>
 
           </div>
 
-          <button
-            className="rounded-xl border border-white/10 bg-white/5 p-3 lg:hidden"
-          >
+          <button className="rounded-xl border border-white/10 bg-white/5 p-3 lg:hidden">
             <Menu size={20} />
           </button>
 
