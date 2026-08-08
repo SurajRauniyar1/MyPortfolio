@@ -10,7 +10,7 @@ export default function HeroContent() {
         transition={{ duration: 0.5 }}
         className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-5 py-2 text-sm font-medium text-blue-400 backdrop-blur-md"
       >
-        <span className="h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
+        <span className="h-2 w-2 animate-pulse rounded-full bg-blue-500" />
         Backend Engineer • AI Engineer • Full Stack Developer
       </motion.div>
 
@@ -41,10 +41,13 @@ export default function HeroContent() {
         transition={{ delay: 0.35, duration: 0.6 }}
         className="mt-8 max-w-xl text-lg leading-8 text-gray-400"
       >
-        I'm <span className="font-semibold text-white">Suraj Rauniyar</span>,
-        an M.Tech Computer Science student at NIT Meghalaya focused on building
-        scalable backend systems, AI-powered applications, and production-ready
-        software using modern technologies.
+        I'm{" "}
+        <span className="font-semibold text-white">
+          Suraj Rauniyar
+        </span>
+        , an M.Tech Computer Science student at NIT Meghalaya focused on
+        building scalable backend systems, AI-powered applications, and
+        production-ready software.
       </motion.p>
 
       <motion.div
@@ -53,17 +56,26 @@ export default function HeroContent() {
         transition={{ delay: 0.55, duration: 0.6 }}
         className="mt-10 flex flex-wrap gap-4"
       >
-        <button className="group flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-7 py-4 font-semibold shadow-lg shadow-blue-600/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-600/50">
+        {/* Projects */}
+        <a
+          href="#projects"
+          className="group flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-7 py-4 font-semibold shadow-lg shadow-blue-600/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-600/40"
+        >
           Explore Projects
 
           <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-        </button>
+        </a>
 
-        <button className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-7 py-4 font-semibold backdrop-blur-xl transition-all duration-300 hover:border-blue-500 hover:bg-blue-500/10">
-          <Download className="h-5 w-5" />
+        {/* Resume */}
+        <a
+          href="/resume.pdf"
+          download="Suraj-Rauniyar-Resume.pdf"
+          className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-7 py-4 font-semibold backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-500/10"
+        >
+          <Download className="h-5 w-5 transition-transform duration-300 group-hover:translate-y-1" />
 
           Download Resume
-        </button>
+        </a>
       </motion.div>
     </div>
   );
