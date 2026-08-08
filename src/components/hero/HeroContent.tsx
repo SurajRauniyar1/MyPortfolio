@@ -67,15 +67,15 @@ export default function HeroContent() {
         </a>
 
         {/* Resume */}
-        <a
-          href="./Suraj_Rauniyar_Professional_CV.pdf"
-          download="Suraj-Rauniyar-Resume.pdf"
-          className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-7 py-4 font-semibold backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-500/10"
-        >
-          <Download className="h-5 w-5 transition-transform duration-300 group-hover:translate-y-1" />
+      <a
+  href="/resume.pdf"
+  download="Suraj-Rauniyar-Resume.pdf"
+  className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-7 py-4 font-semibold backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-500/10"
+>
+  <Download className="h-5 w-5 transition-transform duration-300 group-hover:translate-y-1" />
 
-          Download Resume
-        </a>
+  Download Resume
+</a>
       </motion.div>
     </div>
   );
