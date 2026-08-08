@@ -51,12 +51,12 @@ export default function Contact() {
 
               <div className="flex items-center gap-4">
                 <Mail className="text-blue-400" />
-                <span>your.email@example.com</span>
+                <span>rauniyarsuraj667@gmail.com</span>
               </div>
 
               <div className="flex items-center gap-4">
                 <Phone className="text-blue-400" />
-                <span>+91 XXXXX XXXXX</span>
+                <span>+91 7397281804</span>
               </div>
 
               <div className="flex items-center gap-4">
