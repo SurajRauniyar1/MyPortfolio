@@ -68,7 +68,7 @@ export default function HeroContent() {
 
         {/* Resume */}
       <a
-  href="/portfolio/public/resume.pdf"
+  href="/resume.pdf"
   download="Suraj-Rauniyar-Resume.pdf"
   className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-7 py-4 font-semibold backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-blue-500/10"
 >
