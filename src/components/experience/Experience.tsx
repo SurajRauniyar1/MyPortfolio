@@ -18,17 +18,18 @@ const timeline = [
     company: "Bagmati Municipality, Nepal",
     icon: Building2,
   },
-  {
-    year: "2024",
-    title: "Web Development Intern",
-    company: "Ransh Innovations",
-    icon: Briefcase,
-  },
+  
   {
     year: "2025 - Present",
     title: "M.Tech Computer Science",
     company: "National Institute of Technology Meghalaya",
     icon: GraduationCap,
+  },
+  {
+    year: "2025",
+    title: "Web Development Intern",
+    company: "Ransh Innovations",
+    icon: Briefcase,
   },
 ];
 
